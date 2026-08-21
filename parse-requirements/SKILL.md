@@ -43,7 +43,7 @@ Check the related code and docs before filling 现状 / 模块 / 实现 / 验证
 - Acceptance criteria are missing and cannot be inferred
 - Named modules, APIs, or pages do not exist in the repo
 
-Do not invent product intent, module owners, or acceptance criteria. Partial parse is allowed: write what is grounded and leave a clearly marked question list for the rest.
+Do not invent product intent, module owners, or acceptance criteria. Ask until the blocker is resolved — do not deliver a file with open questions.
 
 ## Step 4: Write the markdown file
 
@@ -89,7 +89,6 @@ Repeat `## <id> <short title>` plus the five subsections for every requirement.
 
 ## Done when
 
-- Every atomic requirement is in the file with all five sections, or has an explicit question blocking it
+- Every atomic requirement is in the file with all five sections
 - Image-focused objects are reflected in 需求概括 and 验证方法
-- Open questions are listed at the bottom under `## 待确认`, each tied to a requirement id
 - The output file path is reported to the user
