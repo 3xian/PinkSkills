@@ -33,24 +33,9 @@ Each independently implementable change is one requirement. Keep source IDs when
 
 Skip pure background that does not imply a change, unless it is needed to explain 现状及原因.
 
-## Step 3: Ground each requirement in this project
+## Step 3: Ground each requirement in this project, and write the markdown file
 
-Search existing docs and code before filling 现状 / 模块 / 实现 / 验证.
-
-Ask **as soon as** a blocker appears (do not wait until the end, do not batch only at the end) when any of these is true:
-
-- Intent cannot be inferred from the document plus current docs/code
-- The marked image object is ambiguous
-- The request conflicts with existing behavior or architecture
-- Several implementation paths would change architecture or data model equally
-- Acceptance criteria are missing and cannot be inferred
-- Named modules, APIs, or pages do not exist in the repo
-
-Do not invent product intent, module owners, or acceptance criteria. Partial parse is allowed: write what is grounded, and leave a clearly marked question list for the rest.
-
-## Step 4: Write the markdown file
-
-Default output path: `<cwd>/requirements/<source-stem>-parsed.md`. If the user gave a path, use that. Create the `requirements/` directory if needed.
+Default output path: `<cwd>/.requirements/requirements-parsed.md`. If the user gave a path, use that. Create the `.requirements/` directory if needed.
 
 Use this structure (section titles must stay exactly as written):
 
@@ -80,6 +65,8 @@ Use this structure (section titles must stay exactly as written):
 
 Repeat `## <id> <short title>` plus the five subsections for every requirement.
 
+When analyzing each requirement, carefully check the related code and documents. **Ask clarifying questions promptly** if anything is unclear.
+
 ### Field rules
 
 | Field | Rule |
@@ -89,10 +76,3 @@ Repeat `## <id> <short title>` plus the five subsections for every requirement.
 | 涉及模块 | Real packages/files/services/pages, not vague “backend/frontend”. |
 | 实现方法 | Ordered, implementable steps. Match existing patterns. Call out API/schema/UI touch points. |
 | 验证方法 | Observable pass/fail checks, including the image-marked case and at least one negative/edge case. |
-
-## Done when
-
-- Every atomic requirement is in the file with all five sections, or has an explicit question blocking it
-- Image-focused objects are reflected in 需求概括 and 验证方法
-- Open questions are listed at the bottom under `## 待确认`, each tied to a requirement id
-- The output file path is reported to the user
