@@ -37,6 +37,8 @@ Skip pure background that does not imply a change, unless it is needed to explai
 
 Check the related code and docs before filling 现状 / 模块 / 实现 / 验证. Ask **as soon as** a blocker appears (do not batch questions at the end) when any of these is true:
 
+Whenever you ask a clarifying question, **first state which requirement it is about** — reference the requirement by its `<id>`/short title (e.g. `R1`, `需求1`) or, if the requirement has no ID yet, quote its descriptive title. Never ask a bare question that leaves it unclear which requirement it refers to.
+
 - The marked image object is ambiguous
 - The request conflicts with existing behavior or architecture
 - Several implementation paths would change architecture or data model equally
