@@ -1,12 +1,15 @@
 # pink-review
 
-A one-command code review skill for Grok Build that combines evidence-backed defect detection with high-value, behavior-preserving refactoring and simplification.
+A one-command code review skill that combines evidence-backed defect detection with high-value, behavior-preserving refactoring and simplification.
 
 ## Install
 
-Extract the entire `pink-review` folder into either your project's `.grok/skills/` directory or your user skill directory at `~/.grok/skills/`. On Windows, the user directory is normally `%USERPROFILE%\.grok\skills\`.
+Copy the entire `pink-review` folder into a skills directory the host agent scans:
 
-The final path should end in `pink-review/SKILL.md`.
+- Project: `<project>/.agents/skills/` or `<project>/.<agent>/skills/`
+- User: `~/.agents/skills/` or `~/.<agent>/skills/`
+
+`<agent>` is the host agent name. On Windows, `~` is `%USERPROFILE%`. The final path should end in `pink-review/SKILL.md`.
 
 ## Use
 

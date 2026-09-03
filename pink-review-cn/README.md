@@ -1,12 +1,15 @@
 # pink-review-cn
 
-面向 Grok Build 的一键式中文代码审查 skill：同时提供证据驱动的缺陷审查，以及高价值、行为保持型的重构与精简建议。
+面向 AI coding agent 的一键式中文代码审查 skill：同时提供证据驱动的缺陷审查，以及高价值、行为保持型的重构与精简建议。
 
 ## 安装
 
-把整个 `pink-review-cn` 文件夹解压到项目的 `.grok/skills/` 目录，或用户目录下的 `~/.grok/skills/`。Windows 用户目录通常是 `%USERPROFILE%\.grok\skills\`。
+把整个 `pink-review-cn` 文件夹复制到宿主 agent 会扫描的 skills 目录：
 
-最终路径应以 `pink-review-cn/SKILL.md` 结尾。
+- 项目：`<project>/.agents/skills/` 或 `<project>/.<agent>/skills/`
+- 用户：`~/.agents/skills/` 或 `~/.<agent>/skills/`
+
+`<agent>` 是宿主 agent 名称。Windows 上 `~` 对应 `%USERPROFILE%`。最终路径应以 `pink-review-cn/SKILL.md` 结尾。
 
 ## 使用
 

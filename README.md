@@ -12,7 +12,7 @@ A collection of skills that can be installed directly in AI coding agents. Each 
 
 ## Installation
 
-Choose a skill and copy its entire directory into the host tool's skills directory. Preserve the directory structure. For example:
+Choose a skill and copy its entire directory into a skills directory the host agent scans. Preserve the directory structure. For example:
 
 ```text
 <skills-directory>/
@@ -22,13 +22,12 @@ Choose a skill and copy its entire directory into the host tool's skills directo
     └── VERSION
 ```
 
-For Grok Build, install it in either of these locations:
+Typical locations:
 
-- Project: `<project>/.grok/skills/`
-- User: `~/.grok/skills/`
-- Windows user: `%USERPROFILE%\.grok\skills\`
+- Project: `<project>/.agents/skills/` or `<project>/.<agent>/skills/`
+- User: `~/.agents/skills/` or `~/.<agent>/skills/`
 
-For other agents, use the skills directory specified by that agent. After installation, invoke the skill with the command shown in the table above.
+`<agent>` is the host agent name. On Windows, `~` is `%USERPROFILE%`. After installation, invoke the skill with the command shown in the table above.
 
 ## Usage
 
