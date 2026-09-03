@@ -6,7 +6,8 @@ A collection of skills that can be installed directly in AI coding agents. Each 
 
 | Skill | Description | Output language | Invocation |
 | --- | --- | --- | --- |
-| [`parse-requirements`](./parse-requirements/) | Breaks down PRDs, requirement documents, screenshots, or wireframes into structured implementation requirements, then maps them to modules, implementation approaches, and verification steps in the current codebase | Chinese | `/parse-requirements` |
+| [`parse-requirements`](./parse-requirements/) | Breaks down PRDs, requirement documents, screenshots, or wireframes into structured implementation requirements, then maps them to modules, implementation approaches, and verification steps in the current codebase | English | `/parse-requirements` |
+| [`parse-requirements-cn`](./parse-requirements-cn/) | Chinese version of `parse-requirements` with the same evidence-driven workflow and a Chinese output template | Chinese | `/parse-requirements-cn` |
 | [`pink-review`](./pink-review/) | Automatically determines the Git change scope and performs evidence-based defect review plus behavior-preserving simplification review | English | `/pink-review` |
 | [`pink-review-cn`](./pink-review-cn/) | Chinese version of `pink-review` that reports review findings in Chinese | Chinese | `/pink-review-cn` |
 
@@ -33,14 +34,14 @@ Typical locations:
 
 ### Parse requirements
 
-Run `/parse-requirements` and provide a path to a requirement document, paste the requirement text, or attach a file in chat. The skill will:
+Run `/parse-requirements` for English output or `/parse-requirements-cn` for Chinese output, then provide a path to a requirement document, paste the requirement text, or attach a file in chat. Both skills will:
 
 1. Read all text and images, prioritizing boxed, circled, highlighted, and arrow-marked content.
-2. Break the document into atomic requirements that can be implemented independently.
-3. Inspect the current codebase to identify the actual modules and current state for each requirement.
-4. Write the parsed result in Chinese to `.requirements/<source-stem>-parsed.md` by default.
+2. Break the document into atomic requirements that can be implemented and verified independently.
+3. Inspect the current codebase to identify the actual modules, current behavior, and implementation constraints.
+4. Write the parsed result to `.requirements/<source-stem>-parsed.md` by default.
 
-Each requirement includes a summary, the current state and rationale, affected modules, implementation steps, and verification steps.
+Each requirement includes a one-sentence summary, the current state and rationale, affected modules, implementation steps, and verification steps.
 
 ### Review code
 
@@ -58,6 +59,8 @@ The code review skills are always read-only. They never modify code or create co
 ```text
 .
 ├── parse-requirements/
+│   └── SKILL.md
+├── parse-requirements-cn/
 │   └── SKILL.md
 ├── pink-review/
 │   ├── SKILL.md
