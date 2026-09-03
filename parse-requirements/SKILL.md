@@ -1,6 +1,6 @@
 ---
 name: parse-requirements
-description: Parses a requirements document (including images, especially boxed or arrow-focused regions) into a structured markdown file with: one-sentence summary, current state and causes, involved modules, implementation approach, and verification. Use when the user runs /parse-requirements, or asks to parse/analyze a PRD, requirements doc, 需求文档, 解析需求, or break requirements into that five-section structure. If intent cannot be inferred from existing project docs or code, ask clarifying questions immediately.
+description: "Parses a requirements document (including images, especially boxed or arrow-focused regions) into a structured markdown file with: one-sentence summary, current state and causes, involved modules, implementation approach, and verification. Use when the user runs /parse-requirements, or asks to parse/analyze a PRD, requirements doc, 需求文档, 解析需求, or break requirements into that five-section structure. If intent cannot be inferred from existing project docs or code, ask clarifying questions immediately."
 ---
 
 # Parse Requirements
