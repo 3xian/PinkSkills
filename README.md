@@ -2,6 +2,8 @@
 
 A collection of skills that can be installed directly in AI coding agents. Each skill is distributed in its own directory, with its core behavior defined in the corresponding `SKILL.md`.
 
+[Visit the PinkSkills website →](https://3xian.github.io/PinkSkills/)
+
 ## Skills
 
 | Skill | Description | Output language | Invocation |
@@ -58,6 +60,9 @@ The code review skills are always read-only. They never modify code or create co
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── pages.yml
 ├── parse-requirements/
 │   └── SKILL.md
 ├── parse-requirements-cn/
@@ -70,6 +75,10 @@ The code review skills are always read-only. They never modify code or create co
 │   ├── SKILL.md
 │   ├── README.md
 │   └── VERSION
+├── site/
+│   ├── index.html
+│   ├── script.js
+│   └── styles.css
 └── README.md
 ```
 

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PinkSkills is a focused collection of evidence-driven skills for AI coding agents.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="PinkSkills — Precision workflows for coding agents">
+  <meta property="og:description" content="Small, focused skills that make coding agents more rigorous, repeatable, and useful.">
+  <meta property="og:type" content="website">
+  <title>PinkSkills — Precision workflows for coding agents</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="PinkSkills home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 28 28" role="img">
+            <path d="M7 20.5V8.8C7 7.25 8.25 6 9.8 6h6.25a5.45 5.45 0 0 1 0 10.9H11.2"/>
+            <path d="M11.2 11.45h4.65"/>
+          </svg>
+        </span>
+        <span>PinkSkills</span>
+      </a>
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#principles">Principles</a>
+        <a href="#install">Install</a>
+      </div>
+      <a class="nav-github" href="https://github.com/3xian/PinkSkills" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        <span>GitHub</span>
+        <span class="external" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy" data-reveal>
+        <div class="eyebrow"><span class="status-dot"></span> Open-source agent skills</div>
+        <h1>Precision workflows<br><span>for coding agents.</span></h1>
+        <p class="hero-lede">Small, focused skills that turn vague agent behavior into rigorous, repeatable engineering workflows.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#skills">Explore skills <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/3xian/PinkSkills" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Project qualities">
+          <span><i aria-hidden="true">✓</i> Evidence-driven</span>
+          <span><i aria-hidden="true">✓</i> Zero runtime</span>
+          <span><i aria-hidden="true">✓</i> Copy and run</span>
+        </div>
+      </div>
+
+      <div class="demo-wrap spotlight" data-reveal data-delay="1">
+        <div class="demo-glow" aria-hidden="true"></div>
+        <div class="demo-shell">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window-title">agent / workspace</span>
+            <span class="window-status"><i></i> ready</span>
+          </div>
+          <div class="demo-tabs" role="tablist" aria-label="Skill preview">
+            <button class="demo-tab is-active" type="button" role="tab" aria-selected="true" data-demo="review">Review</button>
+            <button class="demo-tab" type="button" role="tab" aria-selected="false" data-demo="requirements">Requirements</button>
+          </div>
+          <div class="terminal" aria-live="polite">
+            <div class="terminal-command"><span class="prompt">›</span><span id="demo-command">/pink-review</span><span class="cursor" aria-hidden="true"></span></div>
+            <div class="terminal-rule"></div>
+            <div class="terminal-log" id="demo-log">
+              <div><span class="log-time">00:01</span><span class="log-check">✓</span><span>Resolved change scope</span></div>
+              <div><span class="log-time">00:03</span><span class="log-check">✓</span><span>Traced affected call paths</span></div>
+              <div><span class="log-time">00:07</span><span class="log-check">✓</span><span>Ran defect + simplification passes</span></div>
+            </div>
+            <div class="result-card">
+              <div class="result-head"><span><i></i> Review complete</span><span class="result-count">2 findings</span></div>
+              <p id="demo-result">Evidence first. Every finding includes a trigger, impact, location, and verification path.</p>
+              <div class="result-meta"><span>correctness</span><span>maintainability</span><span>verified</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="float-chip chip-top"><span>⌘</span> portable SKILL.md</div>
+        <div class="float-chip chip-bottom"><span class="pulse"></span> no setup required</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Project summary">
+      <div class="container signal-inner">
+        <span>Four focused skills</span><i></i><span>English + 中文</span><i></i><span>Built for real repositories</span><i></i><span>Open source</span>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading" data-reveal>
+        <p class="section-kicker">The collection</p>
+        <h2>Less prompting.<br>More engineering.</h2>
+        <p>Each skill owns one demanding workflow end to end—without adding a framework, runtime, or new dependency.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card skill-review spotlight" data-reveal>
+          <div class="card-topline"><span class="card-index">01</span><span class="language">EN</span></div>
+          <div class="skill-icon review-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5h16M4 12h10M4 18.5h7"/><path d="m16 17 2 2 3.5-4"/></svg>
+          </div>
+          <h3>Pink Review</h3>
+          <code>/pink-review</code>
+          <p>Evidence-backed defect review, followed by a separate pass for high-value simplification.</p>
+          <ul>
+            <li>Automatic Git scope</li>
+            <li>Concrete execution paths</li>
+            <li>Behavior-preserving refactors</li>
+          </ul>
+          <a href="https://github.com/3xian/PinkSkills/tree/main/pink-review" target="_blank" rel="noreferrer" aria-label="Open Pink Review on GitHub">Explore skill <span>↗</span></a>
+        </article>
+
+        <article class="skill-card skill-requirements spotlight" data-reveal data-delay="1">
+          <div class="card-topline"><span class="card-index">02</span><span class="language">EN</span></div>
+          <div class="skill-icon requirements-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3.5h9l3 3v14H6z"/><path d="M14.5 3.5V7H18M9 11h6M9 14.5h6M9 18h4"/></svg>
+          </div>
+          <h3>Parse Requirements</h3>
+          <code>/parse-requirements</code>
+          <p>Turns documents, screenshots, and wireframes into traceable, codebase-grounded requirements.</p>
+          <ul>
+            <li>Atomic requirement mapping</li>
+            <li>Image-aware analysis</li>
+            <li>Concrete verification paths</li>
+          </ul>
+          <a href="https://github.com/3xian/PinkSkills/tree/main/parse-requirements" target="_blank" rel="noreferrer" aria-label="Open Parse Requirements on GitHub">Explore skill <span>↗</span></a>
+        </article>
+
+        <article class="skill-card skill-review skill-cn spotlight" data-reveal>
+          <div class="card-topline"><span class="card-index">03</span><span class="language language-cn">中文</span></div>
+          <div class="skill-icon review-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5h16M4 12h10M4 18.5h7"/><path d="m16 17 2 2 3.5-4"/></svg>
+          </div>
+          <h3>Pink Review 中文版</h3>
+          <code>/pink-review-cn</code>
+          <p>同一套证据驱动审查流程，提供完整、准确的中文缺陷结论与精简建议。</p>
+          <ul>
+            <li>自动确定 Git 变更范围</li>
+            <li>追踪具体执行路径</li>
+            <li>寻找行为保持型精简方案</li>
+          </ul>
+          <a href="https://github.com/3xian/PinkSkills/tree/main/pink-review-cn" target="_blank" rel="noreferrer" aria-label="在 GitHub 打开 Pink Review 中文版">查看技能 <span>↗</span></a>
+        </article>
+
+        <article class="skill-card skill-requirements skill-cn spotlight" data-reveal data-delay="1">
+          <div class="card-topline"><span class="card-index">04</span><span class="language language-cn">中文</span></div>
+          <div class="skill-icon requirements-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3.5h9l3 3v14H6z"/><path d="M14.5 3.5V7H18M9 11h6M9 14.5h6M9 18h4"/></svg>
+          </div>
+          <h3>需求解析中文版</h3>
+          <code>/parse-requirements-cn</code>
+          <p>完整读取需求材料与标注图片，拆分原子需求，并结合当前代码库形成可落地方案。</p>
+          <ul>
+            <li>需求来源全程可追溯</li>
+            <li>区分事实与推断</li>
+            <li>五段式中文交付</li>
+          </ul>
+          <a href="https://github.com/3xian/PinkSkills/tree/main/parse-requirements-cn" target="_blank" rel="noreferrer" aria-label="在 GitHub 打开需求解析中文版">查看技能 <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section principles" id="principles">
+      <div class="container">
+        <div class="section-heading compact" data-reveal>
+          <p class="section-kicker">Designed for trust</p>
+          <h2>Agent work you can inspect.</h2>
+          <p>Clear boundaries, concrete evidence, and output that survives contact with a real codebase.</p>
+        </div>
+        <div class="bento-grid">
+          <article class="bento bento-large spotlight" data-reveal>
+            <div class="bento-label">01 / Evidence</div>
+            <h3>Claims earn their place.</h3>
+            <p>Findings cite real files, symbols, execution paths, and observable impact. Plausible is not enough.</p>
+            <div class="evidence-stack" aria-hidden="true">
+              <div><span class="file-dot violet"></span><code>src/auth/session.ts</code><span>verified</span></div>
+              <div><span class="tree-line"></span><span class="file-dot blue"></span><code>refreshSession()</code><span>caller</span></div>
+              <div><span class="tree-line"></span><span class="file-dot pink"></span><code>expired token</code><span>trigger</span></div>
+            </div>
+          </article>
+          <article class="bento spotlight" data-reveal data-delay="1">
+            <div class="bento-label">02 / Scope</div>
+            <h3>Focused by default.</h3>
+            <p>Every skill has one job, explicit boundaries, and a hard definition of done.</p>
+            <div class="scope-orbit" aria-hidden="true"><span>source</span><span>workflow</span><span>proof</span><i></i></div>
+          </article>
+          <article class="bento spotlight" data-reveal>
+            <div class="bento-label">03 / Fit</div>
+            <h3>Grounded in your repo.</h3>
+            <p>Existing architecture and conventions shape the answer—not generic advice.</p>
+            <div class="fit-bars" aria-hidden="true"><span style="--w:92%"></span><span style="--w:74%"></span><span style="--w:84%"></span><span style="--w:58%"></span></div>
+          </article>
+          <article class="bento bento-wide spotlight" data-reveal data-delay="1">
+            <div>
+              <div class="bento-label">04 / Simplicity</div>
+              <h3>Markdown in. Better decisions out.</h3>
+              <p>No service, database, account, or package install. The workflow lives in one readable file.</p>
+            </div>
+            <div class="file-visual" aria-hidden="true">
+              <div class="file-tab"><span></span> SKILL.md</div>
+              <div class="file-lines"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container workflow" id="install">
+      <div class="section-heading compact" data-reveal>
+        <p class="section-kicker">From zero to useful</p>
+        <h2>Install in minutes.</h2>
+        <p>Clone the collection, copy the skill directory into your agent's skills folder, then invoke it by name.</p>
+      </div>
+      <div class="steps" data-reveal>
+        <article><span>01</span><h3>Clone</h3><p>Bring the repository to your machine.</p></article>
+        <article><span>02</span><h3>Copy</h3><p>Move one skill folder into your agent's skills directory.</p></article>
+        <article><span>03</span><h3>Run</h3><p>Invoke the slash command in your project.</p></article>
+      </div>
+      <div class="install-panel spotlight" data-reveal>
+        <div class="install-copy">
+          <span class="terminal-label">Terminal</span>
+          <code id="clone-command">git clone https://github.com/3xian/PinkSkills.git</code>
+        </div>
+        <button class="copy-button" type="button" data-copy="#clone-command" aria-label="Copy clone command">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+          <span>Copy</span>
+        </button>
+      </div>
+      <p class="install-note">Skills are plain Markdown. Review every instruction before adding it to your agent.</p>
+    </section>
+
+    <section class="final-cta container" data-reveal>
+      <div class="cta-glow" aria-hidden="true"></div>
+      <p class="section-kicker">Open source. Intentionally small.</p>
+      <h2>Give your agent<br>a sharper way to work.</h2>
+      <a class="button button-primary" href="https://github.com/3xian/PinkSkills" target="_blank" rel="noreferrer">Explore on GitHub <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 28 28"><path d="M7 20.5V8.8C7 7.25 8.25 6 9.8 6h6.25a5.45 5.45 0 0 1 0 10.9H11.2"/><path d="M11.2 11.45h4.65"/></svg>
+        </span>
+        <span>PinkSkills</span>
+      </a>
+      <p>Focused workflows for coding agents.</p>
+      <div class="footer-links"><a href="https://github.com/3xian/PinkSkills" target="_blank" rel="noreferrer">GitHub</a><span>© <span id="year">2026</span></span></div>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
